@@ -7,13 +7,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body class="bg-light text-dark" data-bs-theme="light">
 
-  
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Muhammad Ahsan</a>
+      <a class="navbar-brand fw-bold" href="#" data-aos="fade-in" data-aos-duration="1000">Muhammad Ahsan</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,36 +33,58 @@
     </div>
   </nav>
 
-  
+
+
+  <!-- Home Section -->
   <section id="home" class="vh-100 d-flex align-items-center bg-primary text-white">
-    <div class="container text-center">
+    <div class="container text-center" data-aos="fade-up">
       <h1 class="display-4 fw-bold">Hi, I'm Ahsan</h1>
       <p class="lead">Full-Stack Developer | UI/UX Enthusiast</p>
-            <a href="./Muhammad Ahsan saeed khan.pdf" class="btn btn-outline-light btn-lg mt-3 me-2" download>Download CV</a>
+      <a href="./Muhammad Ahsan saeed khan.pdf" class="btn btn-outline-light btn-lg mt-3 me-2" download>Download CV</a>
       <a href="#projects" class="btn btn-light btn-lg mt-3">View My Work</a>
     </div>
   </section>
 
- 
+  <!-- About Section -->
   <section id="about" class="py-5 bg-light text-dark">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="text-center mb-4">
         <h2>About Me</h2>
         <p class="text-muted">Who I am & what I do</p>
       </div>
       <div class="row align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right">
           <img src="./IMG_2132.jpg" class="img-fluid rounded shadow" alt="Profile">
         </div>
-        <div class="col-md-6">
-          <p>Hello! I'm a passionate developer with experience in building modern web applications using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL. I enjoy solving real-world problems and making elegant interfaces.</p>
+        <div class="col-md-6" data-aos="fade-left">
+          <p>Hello! I'm a passionate developer with experience in building modern web applications using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL.</p>
           <ul>
             <li>🌐 Frontend & Backend</li>
             <li>🎨 UI/UX Design</li>
             <li>📚 Currently learning Flutter</li>
-            <li>📚 Growing Interest in DATA Science</li>
+            <li>📊 Growing Interest in Data Science</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section id="skills" class="py-5 bg-white text-dark">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center mb-4">
+        <h2>Software & Technologies</h2>
+        <p class="text-muted">Tools and technologies I work with</p>
+      </div>
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3"><i class="bi bi-filetype-html fs-1 text-danger"></i><p>HTML</p></div>
+        <div class="col-6 col-md-3"><i class="bi bi-filetype-css fs-1 text-primary"></i><p>CSS</p></div>
+        <div class="col-6 col-md-3"><i class="bi bi-filetype-js fs-1 text-warning"></i><p>JavaScript</p></div>
+        <div class="col-6 col-md-3"><i class="bi bi-bootstrap-fill fs-1 text-purple"></i><p>Bootstrap</p></div>
+        <div class="col-6 col-md-3"><i class="bi bi-filetype-php fs-1 text-info"></i><p>PHP</p></div>
+        <div class="col-6 col-md-3"><i class="bi bi-database-fill fs-1 text-success"></i><p>MySQL</p></div>
+        <div class="col-6 col-md-3"><i class="bi bi-filetype-java fs-1 text-danger"></i><p>Java</p></div>
+        <div class="col-6 col-md-3"><i class="bi bi-github fs-1"></i><p>GitHub</p></div>
       </div>
     </div>
   </section>
@@ -74,41 +96,52 @@
         <p class="text-muted">Some recent work</p>
       </div>
       <div class="row g-4">
+        <!-- Project 1 -->
         <div class="col-md-4">
           <div class="card h-100 shadow">
             <img src="p1.png" class="card-img-top" alt="Project 1">
             <div class="card-body">
               <h5 class="card-title">JobFinder</h5>
               <p class="card-text">An online job portal built with HTML, CSS, JS, PHP, and MySQL. Includes authentication and admin dashboard.</p>
+              <a href="https://github.com/MuhammadAhsan-MASK" class="btn btn-outline-primary" target="_blank">View Code</a>
             </div>
           </div>
-        </div><div class="col-md-4">
-            <div class="card h-100 shadow">
-              <img src="./s1.png" class="card-img-top" alt="Project 2">
-              <div class="card-body">
-                <h5 class="card-title">JAVA Based Airline System</h5>
-                <p class="card-text">"Airline Reservation System" is a user-friendly application designed to simplify and streamline the process of booking airline tickets.</p>
-              </div>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="./s1.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">JAVA Based Airline System</h5>
+              <p class="card-text">"Airline Reservation System" is a user-friendly application designed to simplify and streamline the process of booking airline tickets.</p>
+              <a href="https://github.com/MuhammadAhsan-MASK/airline-reservation-system.git" class="btn btn-outline-primary" target="_blank">View Code</a>
             </div>
           </div>
-          
-          
-          <div class="col-md-4">
-            <div class="card h-100 shadow">
-              <img src="./s2.png" class="card-img-top" alt="Project 4">
-              <div class="card-body">
-                <h5 class="card-title">ATM APPLICATION</h5>
-                <p class="card-text">GUI based simple ATM application used to deposit and withdraw cash using JAVA.</p>
-              </div>
+        </div>
+  
+        <!-- Project 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="./s2.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">ATM Application</h5>
+              <p class="card-text">GUI based simple ATM application used to deposit and withdraw cash using JAVA.</p>
+              <a href="https://github.com/MuhammadAhsan-MASK/ATMAPP.git" class="btn btn-outline-primary" target="_blank">View Code</a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="https://github.com/MuhammadAhsan-MASK" class="btn btn-primary btn-lg" target="_blank">See More Projects on GitHub</a>
       </div>
     </div>
   </section>
-
+ 
   
-  <section id="contact" class="py-5 bg-light text-dark">
-    <div class="container">
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-white text-dark">
+    <div class="container" data-aos="fade-up">
       <div class="text-center mb-4">
         <h2>Contact Me</h2>
         <p class="text-muted">Let’s work together</p>
@@ -129,14 +162,13 @@
               <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary w-100">Send</button>
-            <form action="https://formspree.io/f/mdkgadwz" method="POST" onsubmit="alert('Your message has been sent!');">
-
           </form>
         </div>
       </div>
     </div>
   </section>
-  
+
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-4">
     <div class="container">
       <p class="mb-2">© 2025 Ahsan. All rights reserved.</p>
@@ -150,22 +182,21 @@
       </div>
     </div>
   </footer>
-  
 
-
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
+    AOS.init();
+
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
     const icon = themeToggle.querySelector('i');
-  
+    
     themeToggle.addEventListener('click', () => {
       const isDark = body.getAttribute('data-bs-theme') === 'dark';
       body.setAttribute('data-bs-theme', isDark ? 'light' : 'dark');
       icon.classList.toggle('bi-moon', isDark);
       icon.classList.toggle('bi-brightness-high', !isDark);
     });
-  </script>
-  
   </script>
 </body>
 </html>
